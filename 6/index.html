@@ -24,9 +24,16 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ejercicio 06</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
   </head>
   <body>
-
+  	<img src="naomi-thai.png" alt="hola">
+    <script>
+    	$("img").on( "contextmenu", function( e) {
+    		e.preventDefault();
+    		alert("imágen con derecho de autor, no se pueden descargar sin el consentimiento del autor");
+    	});
+    </script>
   </body>
 </html>
